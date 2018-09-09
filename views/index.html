@@ -1,0 +1,60 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script sync src="https://platform.twitter.com/widgets.js"></script>
+    <script src="/reqwest.js" defer></script>
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <em>Twitter Wayback Machine</em> 🕒
+      </h1>
+      <em>See tweets you liked a long time ago</em>
+    </header>
+
+    <main>
+      <br>
+      <br>
+      <div id="user">
+        
+      </div>
+      <div id="tweet"></div>
+      <div id="new" style="text-align:center">
+        <button onclick="newTweet()">
+          Another one 🐦
+        </button>
+      </div>
+    </main>
+
+    <footer style="text-align:center">
+      👨‍💻 Made by <a href="https://twitter.com/jajoosam">@jajoosam</a><br><br>
+      <a href="https://github.com/jajoosam/wikibot"><img src="https://icongr.am/fontawesome/github.svg?size=20" style="vertical-align"></a>
+      <a href="https://glitch.com/~wealthy-plate"><img src="https://cdn.glitch.com/be1ad2d2-68ab-404a-82f4-6d8e98d28d93%2Ffor-platforms-icon.svg?1506442305188" style="max-width:30px"></a>
+    </footer>
+
+  
+  </body>
+</html>
