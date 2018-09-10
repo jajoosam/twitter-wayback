@@ -52,3 +52,23 @@ function newTweet(){
     tw(resp.id);
   })
 }
+
+
+var modal = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Close"
+});
+
+
+
+var info = 
+`
+<h1>About Twitter Wayback ⏰</h1>
+<p>We use the twitter API to show you a random tweet out of your last <em>200</em> likes. It is not possible to seatch for more, due to twitter's API limitations.</p>
+
+<p>All code is available on <a href="https://github.com/jajoosam/twitter-wayback">Github</a> and <a href="https://glitch.com/~twitter-wayback">Glitch.</a> <br>Made by <a href="https://twitter.com/jajoosam">Samarth Jajoo</a> in 3 hours.</p>
+
+`
+modal.setContent(info);
