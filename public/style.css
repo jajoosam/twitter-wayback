@@ -10,9 +10,12 @@ body {
   margin: 2em;
 }
 
+header{
+  text-align:center;
+}
+
 h1 {
-  color: #373fff;
-  font-size:3em
+  font-size:2em
 }
 
 .bold {
@@ -26,11 +29,11 @@ p {
 form {
   margin-bottom: 25px;
   padding: 15px;
-  background-color: cyan;
+  background-color: #2D96FF;
   display: inline-block;
   width: 100%;
   max-width: 340px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 input {

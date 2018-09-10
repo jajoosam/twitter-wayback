@@ -10,19 +10,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Welcome to Glitch!</title>
-    <meta name="description" content="A cool thing made with Glitch">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <title>Twitter Wayback</title>
+    <meta name="description" content="Wayback machine for twitter likes.">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/232431b0-2cbe-41ed-b133-8f97c235014c%2Falarm-clock_23f0.png?1536483969869" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/tingle.js@0.13.2/dist/tingle.css">
     <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
 
     <link rel="stylesheet" href="/style.css">
     
     <!-- import the webpage's client-side javascript file -->
+    <script src="https://unpkg.com/tingle.js@0.13.2/dist/tingle.min.js"></script>
     <script sync src="https://platform.twitter.com/widgets.js"></script>
     <script src="/reqwest.js" defer></script>
     <script src="/client.js" defer></script>
@@ -30,9 +32,11 @@
   <body>
     <header>
       <h1>
-        <em>Twitter Wayback Machine</em> 🕒
+        <a href="/" style="text-decoration:none; color: #4975FB;">
+          Twitter Wayback Machine ⏰
+        </a>
       </h1>
-      <em>See tweets you liked a long time ago</em>
+      <em>See tweets people liked a while ago</em>
     </header>
 
     <main>
@@ -51,8 +55,9 @@
 
     <footer style="text-align:center">
       👨‍💻 Made by <a href="https://twitter.com/jajoosam">@jajoosam</a><br><br>
-      <a href="https://github.com/jajoosam/wikibot"><img src="https://icongr.am/fontawesome/github.svg?size=20" style="vertical-align"></a>
-      <a href="https://glitch.com/~wealthy-plate"><img src="https://cdn.glitch.com/be1ad2d2-68ab-404a-82f4-6d8e98d28d93%2Ffor-platforms-icon.svg?1506442305188" style="max-width:30px"></a>
+      <a href="https://github.com/jajoosam/twitter-wayback"><img src="https://icongr.am/fontawesome/github.svg?size=20" style="vertical-align"></a>
+      <a href="https://glitch.com/~twitter-wayback"><img src="https://cdn.glitch.com/be1ad2d2-68ab-404a-82f4-6d8e98d28d93%2Ffor-platforms-icon.svg?1506442305188" style="max-width:30px"></a>
+      <img onclick="modal.open()" src="https://icongr.am/fontawesome/question-circle-o.svg?size=20">
     </footer>
 
   
